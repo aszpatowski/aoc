@@ -3,8 +3,8 @@ from pathlib import Path
 from .solution import solve
 
 testdata = [
-    (Path(__file__).parent / "example.txt", 1227775554),
-    # (Path(__file__).parent / "input.txt", <some_number>),
+    (Path(__file__).parent / "example.txt", 357),
+    (Path(__file__).parent / "input.txt", 17383),
 ]
 
 

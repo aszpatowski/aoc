@@ -33,8 +33,22 @@ from pathlib import Path
 file_path = Path(__file__).parent / "input.txt"
 
 
+def format_input(file_path: str) -> list[str]:
+    voltages = []
+    with open(file_path) as file:
+        voltages = file.readlines()
+    return [[int(v) for v in voltage.rstrip()] for voltage in voltages]
+
+
 def solve(file_path: str) -> int:
-    return 1227775554
+    sum_voltages = 0
+    voltages: list[list[int]] = format_input(file_path)
+    for voltage in voltages:
+        biggest = max(voltage[:-1])
+        idx_biggest = voltage.index(biggest)
+        biggest_second = max(voltage[idx_biggest + 1 :])
+        sum_voltages += biggest * 10 + biggest_second
+    return sum_voltages
 
 
 def main():
