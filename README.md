@@ -1,4 +1,7 @@
-# Advent of Code 2025 Solutions
+# Advent of Code Solutions
+
+[![AOC](https://github.com/aszpatowski/aoc/actions/workflows/python-app.yml/badge.svg)](https://github.com/aszpatowski/aoc/actions/workflows/python-app.yml)
+[![Coverage Status](https://coveralls.io/repos/github/aszpatowski/aoc/badge.svg?branch=main)](https://coveralls.io/github/aszpatowski/aoc?branch=main)
 
 A Python project containing solutions to the [Advent of Code](https://adventofcode.com/2025) challenges.
 
